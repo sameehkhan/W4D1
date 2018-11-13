@@ -10,8 +10,8 @@
 #
 
 class User < ApplicationRecord
-  validates :email, uniqueness: true, presence: true
-  validates :name, presence: true
+  validates :username, uniqueness: true, presence: true
+
 
   has_many :artworks,
     primary_key: :id,
